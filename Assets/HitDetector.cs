@@ -6,6 +6,7 @@ public class HitDetector : MonoBehaviour
 {
     [SerializeField] float MaxHitPoints = 100;
     [SerializeField] float currentHitPoints;
+    [SerializeField] float regenerationRate = 0.1f;
     float starterHealthbarScale;
     Transform healthBarTransform;
 
@@ -21,10 +22,24 @@ public class HitDetector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (this.GetComponent<THelperCell>()) {
+            currentHitPoints += regenerationRate;
+            currentHitPoints = Mathf.Min(MaxHitPoints, currentHitPoints);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D col)
+    {
+        Debug.Log("hit by bullet - collision" + col.gameObject.tag);
+        if (this.GetComponent<THelperCell>() && col.gameObject.tag == "Enemy")
+        {
+
+            float damage = col.gameObject.GetComponent<Enemy>().damage;
+            GetHit(damage);
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D col)
     {
         Debug.Log("hit by bullet - collision" + col.gameObject.tag);
         if (this.GetComponent<THelperCell>() && col.gameObject.tag == "Enemy")

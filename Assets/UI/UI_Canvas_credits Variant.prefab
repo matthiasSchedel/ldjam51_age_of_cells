@@ -1,0 +1,117 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8681770699369038092
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 2
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1873065386749252141, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_Name
+      value: UI_Canvas_credits
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065386749252561, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065387827899119, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: 00_start_menu_scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065387971858465, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_text
+      value: Back to Menu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065388135076968, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_text
+      value: Made By Matthias Schedel during Ludum Dare 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873065388135076968, guid: 3c47df0bc24394dc4915379e04975636, type: 3}
+      propertyPath: m_fontSize
+      value: 22.05
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_AddedGameObjects: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3c47df0bc24394dc4915379e04975636, type: 3}

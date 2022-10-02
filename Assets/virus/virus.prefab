@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8853151802770557793}
   - component: {fileID: 8853151802770557792}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: health_bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 986230541
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0ae2b74b1edd14bb18dd7b65ae916a54, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 863478282}
   - component: {fileID: 863478284}
   - component: {fileID: 863478283}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: virus
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ Transform:
   - {fileID: 8853151802770557793}
   - {fileID: 8853151804116186005}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &863478276
 MonoBehaviour:
@@ -139,6 +139,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHitPoints: 100
   currentHitPoints: 0
+  regenerationRate: 0.1
 --- !u!114 &863478278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,7 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   duplicateEveryXSeconds: 10
-  duplicationEnabled: 0
+  duplicationEnabled: 1
   spawningOffest: {x: 0, y: 1, z: 0}
   virusPrefab: {fileID: 8853151803307817571}
 --- !u!114 &863478279
@@ -168,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transformToMoveTo: {fileID: 0}
-  movementSpeed: 2
+  movementSpeed: 1
 --- !u!114 &863478280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +192,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -205,19 +206,19 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8853151803307817571}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &863478284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,7 +254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8853151804116186005}
   - component: {fileID: 8853151804116186004}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,8 +314,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 986230541
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ce466739e8c64432cbd375d7a577cfd5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

@@ -6,6 +6,10 @@ using UnityEngine;
 public class PlayerShoot : MonoBehaviour
 {
     [SerializeField] public GameObject bulletPrefab = null;
+    [SerializeField] private AudioClip m_shoot;
+    [SerializeField] private AudioClip m_hit;
+    [SerializeField] private AudioClip m_die;
+    private AudioSource m_audioSource;
 
     [SerializeField] private bool canShoot = true;
 
@@ -16,6 +20,22 @@ public class PlayerShoot : MonoBehaviour
         
     }
 
+    public void PlayerSoundShoot() {
+        m_audioSource.clip = m_shoot;
+        m_audioSource.Play();
+    }
+
+    public void PlayerSoundHit()
+    {
+        m_audioSource.clip = m_hit;
+        m_audioSource.Play();
+    }
+
+    public void PlayerSoundDie()
+    {
+        m_audioSource.clip = m_die;
+        m_audioSource.Play();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -23,6 +43,7 @@ public class PlayerShoot : MonoBehaviour
         if(canShoot && Input.GetMouseButtonDown(1))
         {
             Shoot();
+            PlayerSoundShoot();
         }
     }
 

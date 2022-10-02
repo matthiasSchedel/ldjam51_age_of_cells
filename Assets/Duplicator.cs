@@ -25,8 +25,11 @@ public class Duplicator : MonoBehaviour
 
     void LaunchProjectile()
     {
-        GameObject instance = Instantiate(virusPrefab);
-        instance.transform.position *= -1.0f;
+        if (FindObjectsOfType<Duplicator>().Length < 100) {
+            GameObject instance = Instantiate(virusPrefab);
+            instance.transform.position *= -1.0f;
+        }
+       
 
         // instance.GetComponent<Rigidbody>().velocity = Random.insideUnitSphere * 5;
     }

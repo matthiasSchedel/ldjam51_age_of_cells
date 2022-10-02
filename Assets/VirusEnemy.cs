@@ -20,6 +20,7 @@ public class VirusEnemy : MonoBehaviour
     public void die()
     {
         Debug.Log("virus dies");
+        FindObjectOfType<GameSystem>().SendMessage("VirusKilled");
         Destroy(this.gameObject);
     }
 }

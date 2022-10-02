@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 866302265}
   - component: {fileID: 866302266}
   - component: {fileID: 866302267}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: antigen
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -50,6 +50,7 @@ MonoBehaviour:
   speed: 20
   damage: 10
   target: {x: 0, y: 0, z: 0}
+  delay: 10
 --- !u!50 &866302266
 Rigidbody2D:
   serializedVersion: 4
@@ -97,7 +98,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4724044604030104395}
   - component: {fileID: 4724044604030104394}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}

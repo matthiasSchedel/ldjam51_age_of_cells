@@ -18,6 +18,7 @@ public class THelperCell : MonoBehaviour
 
     public void die() {
         Debug.Log("t helper dies");
-        Destroy(this.gameObject);
+        FindObjectOfType<LevelManager>().GameOver();
+        // Destroy(this.gameObject);
     }
 }
